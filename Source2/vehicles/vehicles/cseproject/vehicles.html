@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+                document.GetElementByID('bikespan').style.height=document.getElementById('bike').style.getPropertyValue("height");
+
+        function carmove(){
+            document.getElementById("car").classList.replace("car","carmove");
+            document.getElementById("carspan").classList.replace("carspan","carspanmv");
+        }
+        function bikemove(){
+            document.getElementById("bike").classList.replace("bike","bikemove");
+            document.getElementById("bikespan").classList.replace("bikespan","bikespanmv");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ex.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(veh_bg.jpeg);background-position: center;">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="image1.jpeg" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#Beaches">Beaches</a></li>
+            <li class="item"><a href="#Rentals">Rentals</a></li>
+            <li class="item"><a href="#Churches">Churches</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center; color: black;font-size: 55px;font-family: 'Bree Serif', serif;">Chose your preferred vehicle</h1>
+    <br>
+    <br>
+    <div style="align-items: center; display: table; overflow-x: hidden;overflow-y: scroll;">
+        <div style="overflow-x: hidden;position:absolute;left: 0;width: 100%;max-height: max-content;">
+            <span class="bikespan" id="bikespan">
+                <h1 style="color: red;">Bike</h1>
+                <hr>
+                <p style="text-align: center;">Starting from Rs 500/per day</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="">More details</a>
+                <br>
+
+            </span>
+            <span>
+                <img src="bike.jpg" class="bike" id="bike" onclick="bikemove()" >
+                </a>
+            </span>
+            <br>
+            <br>
+            <span>
+                <img src="car.png" class="car" id="car" onclick="carmove()">
+
+            </span>
+            <span class="carspan" id="carspan">
+                <h1 style="color: red;">Car</h1>
+                <hr>
+                <p style="text-align: center;">Starting from Rs 800/per day</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="">More details</a>
+                <br>
+            </span>
+        </div>
+
+    </div>
